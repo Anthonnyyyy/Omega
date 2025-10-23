@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="formulario">
+    <h1 class="title">REGISTRO</h1>
+    <form method="post">
+        <div class="nombres">
+            <label>Nombres</label>
+            <input type="text" required>
+        </div>
+        <div class="Apellidos">
+            <label>Apellidos</label>
+            <input type="text" required>
+        </div>
+        <div class="Correo">
+            <label>Correo Electronico</label>
+            <input type="email" placeholder="ejemplo@gmail.com" required>
+        </div>
+        <div class="Contraseña">
+            <label>Contraseña</label>
+            <input type="password" placeholder="*******" required>
+        </div>
+        <div class="repet">
+            <label>Repite tu contraseña</label>
+            <input type="password" placeholder="*******" required>
+        </div>
+        <div class="Genero">
+            <label>Genero</label>
+            <input list="Genero" name="Genero" required>
+            <datalist id="Genero">
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </datalist>
+        </div>
+        <div class="Nacimiento">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" required> 
+        </div>
+        <div class="opt">
+            <a href="/0login/index.html">enviar</a>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
